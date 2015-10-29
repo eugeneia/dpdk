@@ -3862,7 +3862,7 @@ static inline struct sk_buff *__kc__vlan_hwaccel_put_tag(struct sk_buff *skb,
 #define HAVE_ENCAP_TSO_OFFLOAD
 #endif /* >= 3.10.0 */
 
-#if ( LINUX_VERSION_CODE < KERNEL_VERSION(3,14,0) )
+#if ( LINUX_VERSION_CODE < KERNEL_VERSION(3,13,0) )
 #if (!(RHEL_RELEASE_CODE && RHEL_RELEASE_CODE >= RHEL_RELEASE_VERSION(6,6)))
 #if (!(UBUNTU_KERNEL_CODE >= UBUNTU_KERNEL_VERSION(3,13,0,30,54) \
     && (UBUNTU_RELEASE_CODE == UBUNTU_RELEASE_VERSION(12,4) \
